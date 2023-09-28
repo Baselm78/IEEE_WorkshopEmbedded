@@ -1,0 +1,208 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Basel Mohamed, University, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.38.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      UL2CM3.DLL V1.164.8.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+E:\IEE\Embedded_IEEE\IEEE_WorkshopEmbedded\COTS\STM32F103C8\OnDemandTrafficLights\OnDemandTrafficLights.uvprojx
+Project File Date:  09/27/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+main.c(1): warning: In file included from...
+./STD_TYPES.h(32): warning: no newline at end of file [-Wnewline-eof]
+#endif /* STD_TYPES_H_ */
+                         ^
+main.c(2): warning: In file included from...
+./BIT_MATH.h(17): warning: no newline at end of file [-Wnewline-eof]
+#endif /* BIT_MATH_H_ */
+                        ^
+main.c(4): warning: In file included from...
+./RCC_interface.h(172): warning: no newline at end of file [-Wnewline-eof]
+#endif /**< RCC_INTERFACE_H_ */
+                               ^
+main.c(5): warning: In file included from...
+./GPIO_interface.h(33): warning: // comments are not allowed in this language [-Wcomment]
+/** @} */ // End of GPIO_Values group
+          ^
+./GPIO_interface.h(152): warning: no newline at end of file [-Wnewline-eof]
+#endif /**< GPIO_INTERFACE_H_ */
+                                ^
+main.c(6): warning: In file included from...
+./STK_interface.h(151): warning: no newline at end of file [-Wnewline-eof]
+#endif /**< STK_INTERFACE_H_ */
+                               ^
+main.c(7): warning: In file included from...
+./NVIC_interface.h(277): warning: no newline at end of file [-Wnewline-eof]
+#endif /**< NVIC_INTERFACE_H_ */
+                                ^
+main.c(8): warning: In file included from...
+./EXTI_interface.h(47): warning: // comments are not allowed in this language [-Wcomment]
+/** @} */  // EXTI_Configurations
+           ^
+./EXTI_interface.h(141): warning: no newline at end of file [-Wnewline-eof]
+#endif /**< EXTI_INTERFACE_H_ */
+                                ^
+main.c(14): warning: // comments are not allowed in this language [-Wcomment]
+  //Function prototype for the EXTI0 interrupt handler
+  ^
+main.c(22): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+        int main()
+                ^
+                 void
+main.c(25): warning: implicit declaration of function 'MCAL_RCC_InitSysClock' [-Wimplicit-function-declaration]
+                MCAL_RCC_InitSysClock();
+                ^
+main.c(28): warning: implicit declaration of function 'MCAL_RCC_EnablePeripheral' [-Wimplicit-function-declaration]
+                MCAL_RCC_EnablePeripheral(RCC_APB2,RCC_APB2ENR_IOPAEN);
+                ^
+main.c(34): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+                MCAL_GPIO_SetPinMode(GPIO_PORTA,GPIO_PIN1,GPIO_OUTPUT_PUSH_PULL_2MHZ); //RED
+                                                          ^
+./GPIO_interface.h(80): note: expanded from macro 'GPIO_OUTPUT_PUSH_PULL_2MHZ'
+#define GPIO_OUTPUT_PUSH_PULL_2MHZ               0b0010 /**< GPIO Output Push-Pull Mode, 2MHz */
+                                                 ^
+main.c(35): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+                MCAL_GPIO_SetPinMode(GPIO_PORTA,GPIO_PIN2,GPIO_OUTPUT_PUSH_PULL_2MHZ); //YELLOW
+                                                          ^
+./GPIO_interface.h(80): note: expanded from macro 'GPIO_OUTPUT_PUSH_PULL_2MHZ'
+#define GPIO_OUTPUT_PUSH_PULL_2MHZ               0b0010 /**< GPIO Output Push-Pull Mode, 2MHz */
+                                                 ^
+main.c(36): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+                MCAL_GPIO_SetPinMode(GPIO_PORTA,GPIO_PIN3,GPIO_OUTPUT_PUSH_PULL_2MHZ); //GREEN
+                                                          ^
+./GPIO_interface.h(80): note: expanded from macro 'GPIO_OUTPUT_PUSH_PULL_2MHZ'
+#define GPIO_OUTPUT_PUSH_PULL_2MHZ               0b0010 /**< GPIO Output Push-Pull Mode, 2MHz */
+                                                 ^
+main.c(39): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+                MCAL_GPIO_SetPinMode(GPIO_PORTB,GPIO_PIN0,GPIO_INPUT_PULL_DOWN );
+                                                          ^
+./GPIO_interface.h(66): note: expanded from macro 'GPIO_INPUT_PULL_DOWN'
+#define GPIO_INPUT_PULL_DOWN                    0b1000 /**< GPIO Input Pull down Mode */
+                                                ^
+main.c(42): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+                MCAL_GPIO_SetPinMode(GPIO_PORTB,GPIO_PIN1,GPIO_OUTPUT_PUSH_PULL_2MHZ);  //RED
+                                                          ^
+./GPIO_interface.h(80): note: expanded from macro 'GPIO_OUTPUT_PUSH_PULL_2MHZ'
+#define GPIO_OUTPUT_PUSH_PULL_2MHZ               0b0010 /**< GPIO Output Push-Pull Mode, 2MHz */
+                                                 ^
+main.c(43): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+                MCAL_GPIO_SetPinMode(GPIO_PORTB,GPIO_PIN2,GPIO_OUTPUT_PUSH_PULL_2MHZ);  //YELLOW
+                                                          ^
+./GPIO_interface.h(80): note: expanded from macro 'GPIO_OUTPUT_PUSH_PULL_2MHZ'
+#define GPIO_OUTPUT_PUSH_PULL_2MHZ               0b0010 /**< GPIO Output Push-Pull Mode, 2MHz */
+                                                 ^
+main.c(44): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+                MCAL_GPIO_SetPinMode(GPIO_PORTB,GPIO_PIN3,GPIO_OUTPUT_PUSH_PULL_2MHZ);  //GREEN
+                                                          ^
+./GPIO_interface.h(80): note: expanded from macro 'GPIO_OUTPUT_PUSH_PULL_2MHZ'
+#define GPIO_OUTPUT_PUSH_PULL_2MHZ               0b0010 /**< GPIO Output Push-Pull Mode, 2MHz */
+                                                 ^
+main.c(99): warning: 'return' will never be executed [-Wunreachable-code-return]
+                        return 0 ;
+                               ^
+main.c(108): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
+                        for( u32 i = 0 ; i < 10000; i++);
+                             ^
+main.c(108): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+main.c(132): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
+                        for( u32 f = 0 ; f < 80000 ; f++);
+                             ^
+main.c(132): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+main.c(136): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
+                        for( u32 i = 0 ; i < 200000 ; i++);
+                             ^
+main.c(136): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+main.c(136): warning: declaration shadows a local variable [-Wshadow]
+                        for( u32 i = 0 ; i < 200000 ; i++);
+                                 ^
+main.c(108): note: previous declaration is here
+                        for( u32 i = 0 ; i < 10000; i++);
+                                 ^
+main.c(154): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
+                                        for( u32 c = 0 ; c < 10000 ; c++);
+                                             ^
+main.c(154): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+main.c(163): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
+                                        for( u32 y = 0 ; y < 100000; y++);
+                                             ^
+main.c(163): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+main.c(204): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
+                                        for( u32 i = 0 ; i < 4 ; i++){
+                                             ^
+main.c(204): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+main.c(213): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
+                                                for( u32 i = 0 ; i < 20000 ; i++);
+                                                     ^
+main.c(213): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+main.c(213): warning: declaration shadows a local variable [-Wshadow]
+                                                for( u32 i = 0 ; i < 20000 ; i++);
+                                                         ^
+main.c(204): note: previous declaration is here
+                                        for( u32 i = 0 ; i < 4 ; i++){
+                                                 ^
+main.c(221): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
+                                                for( u32 c = 0 ; c < 20000 ; c++);
+                                                     ^
+main.c(221): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+main.c(231): warning: no newline at end of file [-Wnewline-eof]
+                
+                ^
+40 warnings generated.
+compiling main.c...
+linking...
+Program Size: Code=6116 RO-data=268 RW-data=16 ZI-data=1632  
+FromELF: creating hex file...
+".\Objects\OnDemandTrafficLights.axf" - 0 Error(s), 40 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil.STM32F1xx_DFP.2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/Device/STM32F103C8
+  ./RTE/_Target_1
+  C:/Users/Smart Computer/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/Smart Computer/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Keil::Device:Startup:1.0.0
+      Source file:   Device/Source/ARM/STM32F1xx_OPT.s
+      Include file:  RTE_Driver/Config/RTE_Device.h
+      Source file:   Device/Source/ARM/startup_stm32f10x_md.s
+      Source file:   Device/Source/system_stm32f10x.c
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
