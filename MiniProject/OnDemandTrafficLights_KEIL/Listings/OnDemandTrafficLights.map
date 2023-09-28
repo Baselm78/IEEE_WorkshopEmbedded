@@ -830,18 +830,18 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-       152          0          0          0          0       1013   afio_program.o
-       818          0          0         16          0       2392   exti_program.o
-      1062          0          0          0          0       1947   gpio_program.o
-      1340          0          0          0          0       1702   main.o
-       148          0          0          0          0       3068   nvic_program.o
-       234          0          0          0          0       1104   rcc_program.o
+       152          0          0          0          0        999   afio_program.o
+       818          0          0         16          0       2378   exti_program.o
+      1062          0          0          0          0       1933   gpio_program.o
+      1340          0          0          0          0       1688   main.o
+       148          0          0          0          0       3054   nvic_program.o
+       234          0          0          0          0       1090   rcc_program.o
         64         26        236          0       1536        876   startup_stm32f10x_md.o
-       156          0          0          0          0       2362   stk_program.o
+       156          0          0          0          0       2348   stk_program.o
        400          0          0          0          0       2919   system_stm32f10x.o
 
     ----------------------------------------------------------------------
-      4388         26        268         16       1536      17383   Object Totals
+      4388         26        268         16       1536      17285   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         14          0          0          0          0          0   (incl. Padding)
 
@@ -900,8 +900,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      6116        202        268         16       1632      18091   Grand Totals
-      6116        202        268         16       1632      18091   ELF Image Totals
+      6116        202        268         16       1632      17993   Grand Totals
+      6116        202        268         16       1632      17993   ELF Image Totals
       6116        202        268         16          0          0   ROM Totals
 
 ==============================================================================
